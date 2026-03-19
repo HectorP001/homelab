@@ -218,11 +218,9 @@ The D-Link R15 does not support custom DNS in its DHCP settings, meaning DNS can
 
 The following has been identified but not yet implemented. This is an active project and the list is updated continuously.
 
-- [ ] Configure Pi-hole as DHCP server to cover all network devices automatically
 - [ ] Install and configure fail2ban for automatic blocking of repeated login attempts
 - [ ] Enable automatic security updates (unattended-upgrades)
 - [ ] Further SSH hardening (restrict login to specific users, consider changing default port)
-- [ ] Add Samsung Tizen-specific DNS blocklist
 - [ ] Set up Portainer for visual container management
 - [ ] Evaluate CIS Benchmark Level 1 for Debian as a hardening reference
 - [ ] Set up log monitoring
