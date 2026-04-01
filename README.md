@@ -10,7 +10,7 @@ A documented first step into homelabbing with a focus on performance, stability 
 
 | Component | Choice | Reason |
 |---|---|---|
-| Computer | Raspberry Pi 4 (4GB RAM) | Low power consumption, sufficient performance for home use |
+| Computer | Raspberry Pi 4 (8GB RAM) | Low power consumption, sufficient performance for home use |
 | Cooling | Cooler Master Pi Case 40 | Passive cooling via aluminium shell — no fan, no noise, nothing mechanical to fail |
 | Storage | Samsung 64GB SD card | Good write endurance for 24/7 operation |
 | Network | Wired ethernet | More stable than Wi-Fi and one less attack surface — Wi-Fi is unnecessary exposure for a server that never moves |
@@ -24,7 +24,7 @@ A documented first step into homelabbing with a focus on performance, stability 
 - Pi-optimised kernel provides better hardware support and lower memory usage (~150–180 MB idle vs ~280–350 MB for Ubuntu Server)
 - No desktop environment (headless) — every package that isn't installed is a vulnerability that can't be exploited
 - Debian base means CIS Debian benchmarks and standard tools (ufw, fail2ban, unattended-upgrades) work out of the box
-- 64-bit required for full access to 4GB RAM and ARM64 Docker images
+- 64-bit required for full access to 8GB RAM and ARM64 Docker images
 
 ---
 
