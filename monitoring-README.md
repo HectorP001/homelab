@@ -8,12 +8,12 @@ An incremental observability stack built on a headless Raspberry Pi 4 (8GB), usi
 
 | Component | Role | Status |
 |---|---|---|
-| Node Exporter | Host hardware and OS metrics | ✅ Complete |
-| Prometheus | Metrics scraping and time-series storage | ✅ Complete |
-| cAdvisor | Per-container CPU, memory, and network metrics | ⏳ Planned |
-| Grafana | Dashboards and visualisation | ⏳ Planned |
-| Loki | Log aggregation and storage | ⏳ Planned |
-| Promtail | Log shipping agent | ⏳ Planned |
+| Node Exporter | Host hardware and OS metrics |  Complete |
+| Prometheus | Metrics scraping and time-series storage |  Complete |
+| cAdvisor | Per-container CPU, memory, and network metrics |  Planned |
+| Grafana | Dashboards and visualisation |  Planned |
+| Loki | Log aggregation and storage |  Planned |
+| Promtail | Log shipping agent |  Planned |
 
 ---
 
