@@ -21,10 +21,6 @@ Parts 1 and 2 covered Node Exporter, Prometheus, and cAdvisor — metrics are be
 
 Grafana's default internal port is 3000, which is already occupied on the host by Homepage. Rather than reconfigure either service, Grafana's internal 3000 is mapped to host port 3001. This is the same pattern used throughout the stack — cAdvisor's internal 8080 maps to host 8090 because Pi-hole already owns 8080. Port conflicts are resolved at the host mapping level, not by reconfiguring existing services.
 
-### HTTP for internal services
-
-All `.home` hostnames resolve only inside the local network or over Tailscale. Tailscale provides end-to-end WireGuard encryption for remote access, so traffic to internal services is already encrypted at the tunnel level. Forcing HTTPS on `.home` domains would require either self-signed certificates (browser warnings on every device) or a DNS-01 ACME challenge against a real public domain — unnecessary complexity with no practical security gain for services that are never publicly exposed. This decision is consistent across the entire stack and documented in Part 1.
-
 ### Named Docker volume for persistent data
 
 Grafana stores dashboards, data source configuration, and user settings in `/var/lib/grafana`. Using a named volume (`grafana_data`) means this persists across container restarts and image updates. Watchtower can pull a new Grafana image without losing any configuration.
